@@ -3,8 +3,6 @@ const nodemailer = require('nodemailer');
 const SENDER_MAIL = process.env.SENDER_MAIL;
 const SENDER_PASSWORD = process.env.SENDER_PASSWORD;
 
-console.log(SENDER_MAIL, SENDER_PASSWORD);
-
 exports.sendMail = ( mailto, name, url) => {
   try{
     return new Promise((resolve,reject)=>{

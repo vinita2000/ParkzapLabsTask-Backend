@@ -21,6 +21,7 @@ exports.addForm = async (req, res) => {
 
     await sendMail(email, name, 'github');
 
+    // res.render('/home');
     res.status(200).json({
       message: 'Success'
     });
