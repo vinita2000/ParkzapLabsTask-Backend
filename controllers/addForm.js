@@ -16,7 +16,7 @@ exports.addForm = async (req, res) => {
       const isValid = await validatePhoneNumber(phone);
       if (!isValid) throw new Error('Please enter valid phone number');
     }
-
+    console.log('inserting to db');
     await Form.create(req.body);
 
     await sendMail(email, name, 'github');
