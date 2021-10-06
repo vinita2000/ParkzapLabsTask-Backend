@@ -3,7 +3,7 @@ const nodemailer = require('nodemailer');
 const SENDER_MAIL = process.env.SENDER_MAIL;
 const SENDER_PASSWORD = process.env.SENDER_PASSWORD;
 
-exports.sendMail = ( mailto, name, url) => {
+exports.sendMail = ( mailto, name) => {
   try{
     return new Promise((resolve,reject)=>{
 
@@ -22,7 +22,7 @@ exports.sendMail = ( mailto, name, url) => {
         html: `
             <h3>Form Details for ${name}</h3><br>
             <p> Your Form is Successfully submitted with us !!</p><br>
-            <p> You can view all the forms on this link : <a href="${url}">${url}</a></p><br>
+            <p> You can view all the forms on this link : <a href="https://parkzaplabstask.herokuapp.com/home">$https://parkzaplabstask.herokuapp.com/home</a></p><br>
           `
       };
   
