@@ -10,7 +10,7 @@ ___
 ## PROJECT DESCRIPTION
 
 #### INTRODUCTION
-**This is a Node Js Form app which enable form data validation and storing the forms in a Mongodb database in the cluster for safe and secure data access**
+**This is a Node Js Form app which enables form data validation and storing the forms in a Mongodb database in the cluster for safe and secure data access**
 
 #### MODULES AND LIBRARIES USED
    - NODE JS
